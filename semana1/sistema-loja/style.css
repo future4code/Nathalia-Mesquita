@@ -1,0 +1,82 @@
+.titulo {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.body-index{
+    /* background-image: url(img/tipos-de-frutas-1.jpg); */
+    /* opacity: 0.5; */
+    
+}
+
+.pheader{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color:cornsilk;
+    text-align: center;
+    background-image: url(img/tipos-de-frutas-1.jpg);
+    
+  }
+ 
+.link-index{
+    text-align: center;
+    background-color: lightsalmon;
+    border: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div-index {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    /* background-color:cornsilk; */
+    text-align: center; 
+    background-image: url(img/tipos-de-frutas-1.jpg);
+    position:absolute; 
+    bottom: 1px;
+    right: 0%;
+    width:100%; 
+  }
+
+  .findex {
+      text-align: center;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
+    }
+
+.ahas{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fmprod {
+    text-align: center;
+}
+
+.tbest {
+    border: 2px solid green;
+    text-align: center;
+    border-color: green;
+}
+
+.dprod {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.dprod2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
