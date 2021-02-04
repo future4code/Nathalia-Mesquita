@@ -15,7 +15,8 @@
         <p class="pheader">Aqui você encontra preço e qualidade</p>
     </div>
 </header>
-    
+
+
 <div class="link-index">
     <a href="./index.html" id="menu"><img border="0" src="/img/25694.png" alt="Home" width="20px" height="20px" /></a>
     <a href="./ctrl-estoque.html" id="menu">Controle de Estoque</a>
@@ -25,41 +26,49 @@
     <a href="./hist-vendas.html" id="menu">Histórico</a>
 </div>
 
+    <br>
     
-    <h2 class="ahas">Adicionar Produto</h2>
+    <h2 class="ahas">Vendas</h2>
+    
     
     <form action="" class="fmprod">
         <div class="dprod">
-            <label for="link-foto">Link para foto: </label>
-            <input type="url" id="link-foto" name="link-foto">
-        </div>
+            <label for="escolha-prod">Escolha seu produto: </label>
+            <!-- <input type="url" id="link-foto" name="link-foto"> -->
         
-        <div class="dprod">
-            <label for="descricao">Descrição do produto: </label>
-            <input type="text" id="descricao" name="descrição">
+            <select name="produto">
+                <option value="maca">Maçã</option>
+                <option value="banana">Banana</option>
+                <option value="uva">Uva</option>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="morango">Morango</option>
+                </select>
         </div>
-        
-        <div class="dprod">
-            <label for="preco">Preço (em R$): </label>
-            <input type="text" id="preco" name="preço">
+         <div class="dprod">
+            <label for="link-foto">Quantidade: </label>
+            <!-- <input type="url" id="link-foto" name="link-foto"> -->
+            <select name="qtde">
+                <option value="um">1</option>
+                <option value="dois">2</option>
+                <option value="tres">3</option>
+                <option value="quatro">4</option>
+                <option value="cinco">5</option>
+                </select>
         </div>
-        
         <div class="dprod">
-            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label for="quantidade">Quantidade disponível: </label>
-            <input type="text" id="quantidade" name="quantidade">
+            <label for="forpgto">Forma de Pagamento: </label>
+                <a href="#" id="avenda"><img src="./img/money.png" alt="dinheiro"></a>
+                <a href="#" id="avenda" ><img src="./img/credit-card.png" alt="cartao"></a>
         </div>
         <br>
-    
-
         <div class="form-add">
             
-            <button class="button" type="submit">Adicionar</button>
+            <button class="button" type="submit">Comprar!</button>
         </div>
 
     </form>
 
-    <footer>
+<footer>
     
         <p class="findex">Siga-nos nas redes sociais!</p>
 
@@ -69,6 +78,5 @@
             <img src="https://image.flaticon.com/icons/png/512/8/8800.png" width="50" height="50"/>
         
 </footer>
-
 </body>
 </html>
