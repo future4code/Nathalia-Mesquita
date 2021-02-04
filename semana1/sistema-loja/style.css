@@ -25,14 +25,32 @@ header{
  
 .link-index{
     text-align: center;
+    height: 60px;
     background-color: lightsalmon;
-    border: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#menu {
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: #EBA3BB;
+    border: solid #FFFFFF 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
 }
 
 .div-index {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 footer{
@@ -47,12 +65,11 @@ footer{
     width:100%; 
   }
 
-  .findex {
-      text-align: center;
-      color: white;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      
-    }
+.findex {
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .ahas{
     text-align: center;
@@ -61,18 +78,24 @@ footer{
 
 .fmprod {
     text-align: center;
+    /* border: 1px solid;  */
+    /* width: 500px; */
+    display: block;
+    position: relative;
 }
 
 .tbest {
     border: 2px solid green;
     text-align: center;
     border-color: green;
+    
 }
 
 .dprod {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
+    position: relative;
 }
 
 .dprod2 {
