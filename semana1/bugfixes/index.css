@@ -114,7 +114,9 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+    
 }
+
 
 .container-do-search {
     margin-top: 20px;
@@ -139,17 +141,18 @@ td button {
 }
 
 a:link, a:visited {
-	text-decoration: none
+	text-decoration: none;
 }
     
 a:hover {
 	text-decoration: underline; 
-	color: #f00
+    background-color: #fcce00;
 }
 a:active {
-	text-decoration: none
+    text-decoration: white;
+    color: white;
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: white;
 }
