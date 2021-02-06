@@ -86,7 +86,7 @@ main {
     justify-content: stretch;
 }
 
-img{
+.img-eu {
     background-color: #ddd;
     border-radius: 100%;
     height: 200px;
@@ -114,11 +114,15 @@ main>section{
     flex-grow: 1;
 }
 
+
 main section article {
+    text-align: center;
+    padding-top: 115px;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100%;
     flex-grow: 1;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -128,14 +132,104 @@ main section article {
 
 
 main section article:first-child{
+    padding-top: 120px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     background-color: #222121;
+    
+}
+/* ...............................................................                                                            */
+
+#DivLateral{
+    color: black;
+    padding-left: 20px;
+    /* text-align: center; */
+    border: 2px solid #222121;
+    position: flex;
+    border-radius: 10px;
+    border-width:2px;
+    width: 450px;
+    height: 100px;
+    background-color: white;
+    float: left;
+}
+#DivA{
+    color: black;
+    padding-left: 20px;
+    /* text-align: center; */
+    border: 2px solid #222121;
+    border-radius: 10px;
+    position: flex;
+    border-width:2px;
+    width: 450px;
+    height: 100px;
+    left:0px;
+    background-color: white;
+    float: left;
+}
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+     zoom: 1; 
+}
+
+/* #hab {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    color: white;
+} */
+
+.td-img {
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    color: black;
+}
+
+.tbl-form {
+    padding-left: 300px;
+    margin: 100px;
+}
+
+.img-proj {
+    border-radius: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+table tr{
+    border-radius: 10px;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+table td{
+    border-radius: 10px;
+    background-color: white;
+    width: 190px;
+    height: 100px;
 }
 
 .img-ensino {
+    border-radius: 100%;
     height: 52px;
     width: 52px;
+}
+
+.img-job {
+    height: 52px;
+    width: 92px;
+    background-color: white;
+    border-radius: 15px;
 }
 
 form {
@@ -179,4 +273,5 @@ textarea {
 }
 button {
     margin-left: .5em;
+    cursor: pointer;
 }
