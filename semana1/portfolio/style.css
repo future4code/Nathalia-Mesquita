@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 100px; 
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-image: url(./img/conheca-cursos-de-programacao-gratis-1132x600-1200x720.jpg);
+}
+
+#menu ul {
+    padding: 0px;
+    margin: 68px;
+    width: auto;
+    background-color: #1c1c1c;
+    list-style: none;
+}
+#menu ul li { 
+    display: inline; 
+}
+
+#menu ul li a {
+    border-radius: 30px;
+    padding: 2px 10px;
+    display: inline-block;
+    background-color: #1c1c1c;
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid #1c1c1c;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(187, 187, 207);
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-image: url(./img/conheca-cursos-de-programacao-gratis-1132x600-1200x720.jpg);
+}
+
+.link-rodape {
+    margin: 20px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+u {
+    cursor: pointer;
+}
+
+p {
+    max-height: 2.0em;
+    line-height: 1.0em;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.img-eu {
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;  
+  }
+
+main>nav{
+    display: flex;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    background-color: #1c1c1c;
+}
+
+main>section{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+
+main section article {
+    text-align: center;
+    padding-top: 115px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    flex-grow: 1;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222121;
+    
+}
+
+
+main section article:first-child{
+    padding-top: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #222121;
+    
+}
+/* ...............................................................                                                            */
+
+#DivLateral{
+    color: black;
+    padding-left: 20px;
+    /* text-align: center; */
+    border: 2px solid #222121;
+    position: flex;
+    border-radius: 10px;
+    border-width:2px;
+    width: 450px;
+    height: 100px;
+    background-color: white;
+    float: left;
+}
+#DivA{
+    color: black;
+    padding-left: 20px;
+    /* text-align: center; */
+    border: 2px solid #222121;
+    border-radius: 10px;
+    position: flex;
+    border-width:2px;
+    width: 450px;
+    height: 100px;
+    left:0px;
+    background-color: white;
+    float: left;
+}
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+     zoom: 1; 
+}
+
+/* #hab {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    color: white;
+} */
+
+.td-img {
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    color: black;
+}
+
+.tbl-form {
+    padding-left: 300px;
+    margin: 100px;
+}
+
+.img-proj {
+    border-radius: 10px;
+    height: 40%;
+    width: 40%;
+}
+
+table tr{
+    border-radius: 10px;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+table td{
+    border-radius: 10px;
+    background-color: white;
+    width: 190px;
+    height: 100px;
+}
+
+.img-ensino {
+    border-radius: 100%;
+    height: 52px;
+    width: 52px;
+}
+
+.img-job {
+    height: 52px;
+    width: 92px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+.button {
+    padding-left: 90px; 
+}
+button {
+    margin-left: .5em;
+    cursor: pointer;
+}
