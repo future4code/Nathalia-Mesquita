@@ -11,6 +11,7 @@ function imprimirDespesas(despesas){
     // AQUI VEM A IMPLEMENTAÇÃO
 
 despesas.forEach((despesa) => {
+
 divDespesas.innerHTML += `<p>valor: R$${despesa.valor} | 
                              tipo: ${despesa.tipo} | 
                              descrição: ${despesa.descricao}</p>`
@@ -35,14 +36,15 @@ function imprimirExtrato(){
     //     gastoTotal += item.valor
     // })
 
-arrDespesas.map((despesa) => {
-    if(despesa !== '') {
+arrDespesas.forEach((despesa) => {
     gastoTotal += despesa.valor
-    gastoAlimentacao += despesa.alimentacao
-    gastoUtilidades += despesa.utilidades
-    gastoViagem += despesa.viagem
-    
-}
+    if (despesa.tipo === 'alimentação') {
+        gastoAlimentacao += despesa.valor
+    } else if (despesa.tipo === 'utilidades') {
+        gastoUtilidades += despesa.valor
+    } else if (despesa.tipo === 'viagem') {
+        gastoViagem += despesa.valor
+    }   
 })
 
     divExtrato.innerHTML = `<p>Extrato: Gasto Total: R$${gastoTotal} | Alimentação: R$${gastoAlimentacao} | 
@@ -95,9 +97,9 @@ function filtrarDespesas(){
 
 if (validarTipo(tipoFiltro) && validarValor(valorMin) && validarValor(valorMax)) {
 
-    // console.log(tipoFiltro)
-    // console.log(valorMax)
-    // console.log(valorMin)
+    console.log(tipoFiltro)
+    console.log(valorMax)
+    console.log(valorMin)
 
     imprimirDespesas(arrDespesas.filter((despesas) => {
         if (despesas.tipo === tipoFiltro && despesas.valor > valorMin && despesas.valor < valorMax) {
