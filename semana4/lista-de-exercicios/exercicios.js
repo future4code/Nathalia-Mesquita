@@ -61,14 +61,14 @@ function retornaQuantidadeElementos (array) {
 function retornaExpressoesBooleanas() {
    // implemente sua lógica aqui
 
-   const booleano1 = true
-   const booleano2 = false
-   const booleano3 = !booleano2 
-   const booleano4 = !booleano3 
+   // const booleano1 = true
+   // const booleano2 = false
+   // const booleano3 = !booleano2 
+   // const booleano4 = !booleano3 
    
-   if (booleano1 && booleano2 && !booleano4) {
+   // if (booleano1 && booleano2 && !booleano4) {
 
-   }
+   // }
    
 }
 
@@ -105,6 +105,25 @@ function checaTriangulo(a, b, c) {
 function comparaDoisNumeros(num1, num2) {
    // implemente sua lógica aqui
 
+   let maiorNumero;
+   let menorNumero;
+   let maiorDivisivelporMenor;
+
+   if(num1 < num2) {
+      maiorNumero = num2;
+      menorNumero = num1;
+   } else {
+      maiorNumero = num1;
+      menorNumero = num2;
+   }
+   maiorDivisivelporMenor = maiorNumero % menorNumero === 0;
+
+   const difMaiorMenor = maiorNumero - menorNumero
+   return {
+      maiorNumero: maiorNumero,
+      maiorDivisivelporMenor: maiorDivisivelporMenor,
+      diferenca: difMaiorMenor
+   }
 }
 
 // Exercício 10
