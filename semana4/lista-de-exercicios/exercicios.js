@@ -13,14 +13,14 @@ return invArray
 function retornaNumerosParesElevadosADois (array) {
    // implemente sua lógica aqui
 
-   // let arrayDois = [1, 2, 3, 4, 5, 6]
-   // const novoArrayDois = []
-   // for (let i = 0; i <= array.length -1; i++) {
-   //    if (array[i] % 2 === 0) {
-   //    novoArrayDois.push(array[i] ** 2)
-   // }
-   // }
-   // console.log(novoArrayDois)
+   let arrayDois = [1, 2, 3, 4, 5, 6]
+   const novoArrayDois = []
+   for (let i = 0; i <= array.length -1; i++) {
+      if (array[i] % 2 === 0) {
+      novoArrayDois.push(array[i] ** 2)
+   }
+   }
+   return novoArrayDois
 }
 
 //Exercício 3
@@ -33,7 +33,8 @@ function retornaNumerosPares (array) {
       if (arrayNumsPares[i] % 2 === 0) {
          arrayVazio.push(arrayNumsPares[i])
       }
-}
+      //
+} return arrayVazio
 }
 
 //Exercício 4
@@ -42,7 +43,7 @@ function retornaMaiorNumero(array) {
    // implemente sua lógica aqui
    let arrayMaiNum = [10, 18, 7, 56, 39]
    const maiNum = Math.max(...arrayMaiNum)
-   console.log(maiNum)
+   return maiNum
 }
 
 
@@ -52,13 +53,15 @@ function retornaQuantidadeElementos (array) {
    // implemente sua lógica aqui
 
    const arrayCinco = [1, 2, 3, 4, 5, 6]
-   console.log(arrayCinco.length)
+   return arrayCinco.length
 }
 
 //Exercício 6
 
 function retornaExpressoesBooleanas() {
    // implemente sua lógica aqui
+
+   
 }
 
 //Exercício 7
@@ -167,29 +170,29 @@ const pessoas = [
 
 //Exercício 18, letra A
 
-function retornaPessoasAutorizadas(pessoas) {
+function retornaPessoasAutorizadas() {
    // implemente sua lógica aqui
 }
 
 
 // Exercício 18, letra B
 
-function retornaPessoasNaoAutorizadas(pessoas) {
+function retornaPessoasAutorizadas() {
    // implemente sua lógica aqui
 }
 
 //Exercício 19
 
 const consultas = [
-  { nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
-  { nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
-  { nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
-  { nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
-  ]
+   { nome: "João", genero: "masculino", cancelada: false, dataDaConsulta: "01/10/2019" },
+   { nome: "Pedro", genero: "masculino", cancelada: true, dataDaConsulta: "02/10/2019" },
+   { nome: "Paula", genero: "feminino", cancelada: false, dataDaConsulta: "03/11/2019" },
+   { nome: "Márcia", genero: "feminino", cancelada: true, dataDaConsulta: "04/11/2019" }
+ ]
 
-function retornaEmailConsulta(consultas) {
-  // implemente sua lógica aqui
-}
+ function retornaEmailConsulta() {
+   // implemente sua lógica aqui
+ }
 
 //Exercício 20
 
