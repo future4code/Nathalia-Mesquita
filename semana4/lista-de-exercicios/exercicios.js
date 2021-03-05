@@ -210,6 +210,19 @@ return objeto
 
 function anonimizaPessoa(pessoa) {
    // implemente sua lógica aqui
+
+   // const pessoa = {
+   //    nome: "Astrodev",
+   //    idade: 25,
+   //    email: "astrodev@future4.com.br",
+   //    endereco: "Rua do Futuro, 4"
+   // }
+
+return {
+   ...pessoa,
+   nome: 'ANÔNIMO'
+}   
+   
 }
 
 // Exercício 16
