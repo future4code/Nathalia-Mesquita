@@ -270,12 +270,23 @@ return arrayDezesseteA
 
 function multiplicaArrayPor2S(array) {
   // implemente sua lógica aqui
+
+
 }
 
 // Exercício 17, letra C
 
 function verificaParidade(array) {
    // implemente sua lógica aqui
+   const arrayDezesseteC = array.map((num) => {
+      if (num % 2 !== 0) {
+         return `${num} é ímpar`
+      } else {
+        return `${num} é par`
+      }
+    })
+return arrayDezesseteC
+
 }
 
 // Exercício 18
