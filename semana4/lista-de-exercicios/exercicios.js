@@ -171,31 +171,39 @@ const filmeAstrodev = {
 function imprimeChamada() {
    // implemente sua lógica aqui
 
-   const filmeAstrodev = {
-      nome: 'O Diabo Veste Prada',
-      ano: 2006,
-      diretor: 'David Frankel',
-      atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci'],
-   }
+//    const filmeAstrodev = {
+//       nome: 'O Diabo Veste Prada',
+//       ano: 2006,
+//       diretor: 'David Frankel',
+//       atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci'],
+//    }
 
-   letfilmeAstro = ''
-   for (leti = 0; i < filmeAstrodev.atores.length; i++) {
-   if(i === filmeAstrodev.atores.length - 1) {
-      filmeAstro += filmeAstrodev.atores[i]
-    } else {
-       filmeAstro += filmeAstrodev.atores[i] + ', '
-      }
-   }   
-return `Venha assistir ao filme ${filmeAstrodev.nome}, de 
-                                ${filmeAstrodev.ano}, dirigido por 
-                                ${filmeAstrodev.diretor} e estrelado por 
-                                ${filmeAstro}.`
+//    letfilmeAstro = ''
+//    for (leti = 0; i < filmeAstrodev.atores.length; i++) {
+//    if(i === filmeAstrodev.atores.length - 1) {
+//       filmeAstro += filmeAstrodev.atores[i]
+//     } else {
+//        filmeAstro += filmeAstrodev.atores[i] + ', '
+//       }
+//    }   
+// return `Venha assistir ao filme ${filmeAstrodev.nome}, de 
+//                                 ${filmeAstrodev.ano}, dirigido por 
+//                                 ${filmeAstrodev.diretor} e estrelado por 
+//                                 ${filmeAstro}.`
 }
 
 // Exercício 14
 
 function criaRetangulo(lado1, lado2) {
    // implemente sua lógica aqui
+
+   const objeto = {
+      largura: lado1,
+      altura: lado2,
+      perimetro: 2 * (lado1 + lado2),
+      area: lado1 * lado2
+   }
+return objeto
 }
 
 // Exercício 15
