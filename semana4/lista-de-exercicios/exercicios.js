@@ -248,6 +248,11 @@ function maioresDe18(arrayDePessoas) {
 
 function menoresDe18(arrayDePessoas) {
    // implemente sua lógica aqui
+
+const arrayDezesseisB = arrayDePessoas.filter((pessoa) => {
+   return pessoa.idade < 18
+})
+   return arrayDezesseisB
 }
 
 // Exercício 17, letra A
