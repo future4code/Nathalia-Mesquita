@@ -238,6 +238,10 @@ const arrayDePessoas = [
 
 function maioresDe18(arrayDePessoas) {
    // implemente sua lógica aqui
+   const arrayDezesseisA = arrayDePessoas.filter((pessoa) => {
+      return pessoa.idade >= 18
+   })
+   return arrayDezesseisA
 }
 
 // Exercício 16, letra B
