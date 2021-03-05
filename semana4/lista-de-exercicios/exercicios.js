@@ -40,7 +40,11 @@ function retornaNumerosPares (array) {
 
 function retornaMaiorNumero(array) {
    // implemente sua lógica aqui
+   let arrayMaiNum = [10, 18, 7, 56, 39]
+   const maiNum = Math.max(...arrayMaiNum)
+   console.log(maiNum)
 }
+
 
 //Exercício 5
 
