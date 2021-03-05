@@ -259,6 +259,11 @@ const arrayDezesseisB = arrayDePessoas.filter((pessoa) => {
 
 function multiplicaArrayPor2(array) {
    // implemente sua lógica aqui
+
+const arrayDezesseteA = array.map((num) => {
+   return num * 2
+})
+return arrayDezesseteA
 }
 
 // Exercício 17, letra B
