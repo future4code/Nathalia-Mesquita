@@ -77,11 +77,13 @@ function retornaExpressoesBooleanas() {
 function retornaNNumerosPares(n) {
    // implemente sua lógica aqui
 
-   // let arraySete = [ 0, 2, 4, 6, 8 ]
-   // const numEne = n
-   // for(let i = 0; i < n * 2; i++) {
-   //    if ()
-   // }
+   // const arraySete = []
+   // for (letnumber = 0; arraySete.length < n; number++) {
+   //    if (number % 2 === 0) {
+   //       arraySete.push(number)
+   //    }
+   // } 
+   // return arraySete
 }
 
 // Exercício 8
@@ -89,14 +91,13 @@ function retornaNNumerosPares(n) {
 function checaTriangulo(a, b, c) {
   // implemente sua lógica aqui
 
-//   const triangulo = ['a', 'b', 'c']
-//   if (triangulo[i] === 'a' && triangulo[i] === 'b' && triangulo[i] === 'c') {
-//      console.log('Equilátero') 
-//   } else if (triangulo[i] !== 'a' && triangulo[i] === 'b' && triangulo[i] === 'c') {
-//    console.log('Isósceles')
-//   } else if (triangulo[i] !== 'a' && triangulo[i] !== 'b' && triangulo[i] === 'c') {
-//    console.log('Escaleno')
-//   }
+  if (a !== b && b !== c) {
+   return 'Escaleno'
+  } else if (a === b && b === c) {
+    return 'Equilátero'
+   } else {
+     return 'Isósceles'
+   }
 }
 
 // Exercício 9
@@ -104,11 +105,6 @@ function checaTriangulo(a, b, c) {
 function comparaDoisNumeros(num1, num2) {
    // implemente sua lógica aqui
 
-   // const arrayNumNove = [15, 30]
-   // const arrayNove = [
-   //    { maiorNumero:, maiorDivisivelporMenor:, diferenca:  },
-   //    { maiorNumero:, maiorDivisivelporMenor:, diferenca:  },
-   // ]
 }
 
 // Exercício 10
