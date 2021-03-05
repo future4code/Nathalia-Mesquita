@@ -271,7 +271,10 @@ return arrayDezesseteA
 function multiplicaArrayPor2S(array) {
   // implemente sua lógica aqui
 
-
+   const arrayDezesseteB = array.map((num) => {
+      return (num * 2).toString()
+   })
+   return arrayDezesseteB
 }
 
 // Exercício 17, letra C
@@ -304,6 +307,7 @@ const pessoas = [
 
 function retornaPessoasAutorizadas() {
    // implemente sua lógica aqui
+
 }
 
 
