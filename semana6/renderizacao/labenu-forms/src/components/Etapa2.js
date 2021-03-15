@@ -1,11 +1,19 @@
 import React from "react";
-import './App.css';
 
 class Etapa2 extends React.Component {
 
-  paraProximaEtapa = () => {
-    this.setState({ etapa: 3 });
+  state = {
+    valorInputCurso: "",
+    valorInputUnidade: "",
   }
+
+onChangeInputCurso = (event) => {
+    this.setState({ valorInputCurso: event.target.value });
+};
+
+onChangeInputUnidade = (event) => {
+    this.setState({ valorInputUnidade: event.target.value });
+};
 
   render() {
     return (
@@ -14,16 +22,13 @@ class Etapa2 extends React.Component {
             <h3>ETAPA 2: Informações educacionais para quem está cursando (ou já terminou) o ensino superior</h3>
             <div>
               <p>Qual seu curso?</p>
-              <input></input>
+              <input onChange ={this.onChangeInputCurso} value={this.state.valorInputCurso} />
             </div>
             <div>
             <p>Qual a unidade de ensino?</p>
-              <input></input>
+            <input onChange ={this.onChangeInputUnidade} value={this.state.valorInputUnidade} />
             </div>
-            <div>
-              <button onClick={this.paraProximaEtapa}>Próxima Etapa</button>
-              {this.renderizaEtapa()}
-          </div>
+
         </div>
       </div>
     );

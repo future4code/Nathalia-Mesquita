@@ -1,12 +1,24 @@
 import React from "react";
-import './App.css';
-
 
 class Etapa1 extends React.Component {
 
-  paraProximaEtapa = () => {
-    this.setState({ etapa: 2 });
-  }
+  state = {
+    valorInputNome: "",
+    valorInputIdade: "",
+    valorInputEmail: "",
+}
+
+onChangeInputNome = (event) => {
+  this.setState({ valorInputNome: event.target.value });
+};
+
+onChangeInputIdade = (event) => {
+  this.setState({ valorInputIdade: event.target.value });
+};
+
+onChangeInputEmail = (event) => {
+  this.setState({ valorInputEmail: event.target.value });
+};
 
   render() {
     return (
@@ -15,15 +27,15 @@ class Etapa1 extends React.Component {
           <h3>ETAPA 1: Dados gerais</h3>
           <div>
             <p>Qual seu nome?</p>
-            <input></input>
+            <input onChange ={this.onChangeInputNome} value={this.state.valorInputNome}/>
           </div>
           <div>
           <p>Qual sua idade?</p>
-            <input></input>
+          <input onChange ={this.onChangeInputIdade} value={this.state.valorInputIdade}/>
           </div>
           <div>
           <p>Qual seu e-mail?</p>
-            <input></input>
+          <input onChange ={this.onChangeInputEmail} value={this.state.valorInputEmail}/>
           </div>
           <div>
           <p>Qual sua escolaridade?</p>
@@ -34,13 +46,10 @@ class Etapa1 extends React.Component {
               <option value='ensino superior completo'>Ensino Superior Completo</option>
             </select>
           </div>
-          <div>
-            <button onClick={this.paraProximaEtapa}>Próxima Etapa</button>
-            {this.renderizaEtapa()}
-          </div>
+          
       </div>  
     </div>
   );
 }
-
+}
 export default Etapa1;

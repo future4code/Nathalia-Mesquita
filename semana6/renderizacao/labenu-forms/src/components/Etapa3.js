@@ -1,11 +1,15 @@
 import React from "react";
-import './App.css';
+
 
 class Etapa3 extends React.Component {
 
-  paraProximaEtapa = () => {
-    this.setState({ etapa: 4 });
-  }
+  state = {
+    valorInputFacul: "",
+}
+
+onChangeInputFacul = (event) => {
+  this.setState({ valorInputFacul: event.target.value });
+};
 
   render() {
     return (
@@ -14,7 +18,7 @@ class Etapa3 extends React.Component {
           <h3>ETAPA 3: Informações sobre quem não se formou no ensino superior nem está cursando</h3>
               <div>
                 <p>Por que você não terminou um curso de graduação?</p>
-                <input></input>
+                <input onChange ={this.onChangeInputFacul} value={this.state.valorInputFacul} />
               </div>
               <div>
               <p>Você fez algum curso complementar?</p>
@@ -23,10 +27,6 @@ class Etapa3 extends React.Component {
                   <option value='cursos de ingles'>Cursos de inglês</option>
                   <option value='nao fez curso complementar'>Não fiz curso complementar</option>
                 </select>
-              </div>
-              <div>
-                <button onClick={this.paraProximaEtapa}>Próxima Etapa</button>
-                {this.renderizaEtapa()}
               </div>
         </div>      
       </div>

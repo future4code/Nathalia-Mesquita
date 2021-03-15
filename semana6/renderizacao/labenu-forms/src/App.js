@@ -9,34 +9,39 @@ class App extends React.Component {
 
   state = {
     etapa: 1,
-  }    
+  };
 
-  paraProximaEtapa = () => {
-    this.setState({ etapa: 1 });
+  onClickProximaEtapa = () =>{
+    this.setState({
+      etapa: this.state.etapa + 1
+    })
   }
 
   render() {
-    renderizaEtapa = () => {
+
+    const renderizaEtapa = () => {
       switch (this.state.etapa) {
         case 1: 
-          return <Etapa1 />;
+          return <Etapa1 />
         case 2: 
-          return <Etapa2 />;
+          return <Etapa2 />
         case 3: 
-          return <Etapa3 />;
-        case 4: 
-          return <Final />;  
+          return <Etapa3 />
+        case 4:
+          return <Final />
         default:
-          return <div>Erro!</div>;
+
       }
-      return (
-        <div>
-          <button onClick={this.paraProximaEtapa}>Próxima Etapa</button>
-          {this.renderizaEtapa()}
-        </div>
-      );
-    }
-  }  
-}    
+    };
+    return (
+
+      <div className = "App">
+          {renderizaEtapa()}
+          {this.state.etapa !== 4 && <button onClick={this.onClickProximaEtapa}>Próxima Etapa</button>}
+      </div>
+    );
+
+  }
+}
 
 export default App;
