@@ -1,39 +1,110 @@
 import React from 'react';
 import './App.css';
-import styled from 'styled-components';
+import axios from 'axios'
 import Registro from './components/Registro';
+import Usuario from './components/Usuario';
 
-class App extends React.Component {
-
+export default class App extends React.Component {
   state = {
-    pagina: 1,
+    users: [],
+    inputName: '',
+    inputEmail: '',
+    page: 'home'
   }
 
-  onClickProximaPagina = () =>{
-    this.setState({
-      pagina: this.state.pagina
+  componentDidMount = () => {
+    this.getUsers()
+  }
+
+  onChangeName = (e) => {
+    this.setState({ inputName: e.target.value })
+  }
+  onChangeEmail = (e) => {
+    this.setState({ inputEmail: e.target.value })
+  }
+
+  backScreen = () => {
+    this.setState({ page: 'home' })
+  }
+
+  getUsers = () => {
+    axios.get('https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users', {
+      headers: {
+        Authorization: 'nathalia-cardoso-cruz'
+      }
+    }).then((res) => {
+      this.setState({ users: res.data })
+      console.log(res.data)
+      console.log(this.state.users)
+
+    }).catch((err) => {
+      console.log(err.response.data)
+    })
+  }
+
+  createUser = () => {
+    const body = {
+      name: this.state.inputName,
+      email: this.state.inputEmail
+    }
+
+    axios.post('https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users', body, {
+      headers: {
+        Authorization: 'nathalia-cardoso-cruz'
+      }
+    }).then((res) => {
+      alert('Usuário criado com sucesso!')
+      this.setState({ inputEmail: '', inputName: '' })
+      this.getUsers()
+    }).catch((err) => {
+      console.log(err.response.data)
+      alert('Erro ao criar usuário!')
+    })
+
+    this.setState({ page: 'list' })
+  }
+
+  deleteUser = (id) => {
+    axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`, {
+      headers: {
+        Authorization: 'nathalia-cardoso-cruz'
+      }
+    }).then((res) => {
+      this.getUsers()
+      alert('Usuário apagado!')
+    }).catch((err) => {
+      console.log(err.response.data)
+      alert('Erro ao apagar usuário!')
     })
   }
 
   render() {
-
-    const renderizaPagina = () => {
-      switch (this.state.pagina) {
-        case 1: 
-          return <Registro />;
-      }
-    }  
+    const usersList = this.state.users.map((user) => {
+      return (
+        <div>
+          <li key={user.id}> {user.name} </li>
+          <button onClick={() => this.deleteUser(user.id)}>Apagar usuário</button>
+        </div>
+      )
+    })
 
     return (
+      <div>
+        <Registro
+          valueName={this.state.inputName}
+          onChangeName={this.onChangeName}
 
-      <div className = "App">
-          {renderizaPagina()}
-          {this.state.pagina !== 2 && <button onClick={this.onClickProximaPagina}>Salvar</button>}
-      </div>
-    );  
+          valueEmail={this.state.inputEmail}
+          onChangeEmail={this.onChangeEmail}
+
+          onClickAdd={this.createUser}
+        />
+
+        <Usuario
+          list={usersList}
+          onClick={this.backScreen}
+        />
+      </div >
+    );
   }
-
-  
 }
-
-export default App;

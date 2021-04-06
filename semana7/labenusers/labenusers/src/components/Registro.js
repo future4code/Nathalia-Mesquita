@@ -1,18 +1,25 @@
-import React from 'react';
+import React from 'react'
 
-
-
-class Registro extends React.Component {
-
-  
-
-  render() {
+export default class Register extends React.Component {
     
-      <div className="App">
-        
-      </div>
-    
-  }
-}
+    render() {
+        return (
+            <div>
+                <input
+                    placehoder={'Nome'}
+                    value={this.props.valueName}
+                    onChange={this.props.onChangeName}
+                />
+                <input
+                    type='email'
+                    placehoder={'Email'}
+                    value={this.props.valueEmail}
+                    onChange={this.props.onChangeEmail}
+                />
 
-export default Registro;
+                <button onClick={this.props.onClickAdd}>Adicionar</button>
+                <button onClick={this.props.onClickNext}>Tela de usuários</button>
+            </div>
+        )
+    }
+} 
